@@ -1,0 +1,79 @@
+// document.write("Hello") 
+
+//variáveis , tipos de dados
+
+var myvar = "hello" //variável OU
+let my = "Aloo"
+const myconst = "He"  //não altram valor
+
+//document.write(myvar)
+//document.write(myconst + myvar)
+//document.write(my)
+
+/* 
+"Isso é uma string"
+'isso é uma string'
+`isso é uma string`
+*/
+
+const s1 = "Isso é uma string"
+const s2 = 'isso é uma string'
+const s3 = `isso é uma string`
+
+//number
+const n1 = 1
+const n2 = 22
+const n3 = 13
+
+//document.write(n1 +n3)
+
+
+//boolean - true or false
+
+const bTrue = true
+const bFalse = false
+//document.write(bTrue)
+
+// Objeto possuem propriedades e funcionalidade
+
+//const pessoa = {
+  //nome:"Alexandre",
+  //altura: "1,80m",
+  //idade: 24, 
+  //solteiro: true,
+  //correr(){
+    //document.write("run forest")
+   // return string 
+ // }
+//}
+
+//document.write(pessoa.correr())
+//const a = ["blue", "red", 1, {name: "My Name"}]
+
+//document.write(a[3].name)
+
+// Funções - funcionalidades - Atalhos 
+
+//function saymyname(name) { //Registrar função   (Dado recebido pela chamada da função)
+  
+  //document.write(name)  // Printa a variável name que foi o valor onde recebe
+//}
+
+//saymyname("Douglas") // Executa a função  (Entrada dos dados )
+
+
+//const NotaFinal = 8
+
+//if(NotaFinal <5 ) {
+  //caminho 1 de aplicação
+  //document.write("Reprovado")
+//}
+//else{
+  //caminho 2 de aplicação
+  //document.write("Aprovado")
+//}
+
+for (i=0; i<25; i++){
+  document.write(`<p>${i}</p>`)
+  
+}
