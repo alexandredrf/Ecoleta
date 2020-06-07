@@ -1,4 +1,4 @@
-@media (max-width: 900px){ /* @media , regras de responsividades*/
+@media (max-width: 900px){ /* @media , regras de responsividades celular e afins*/
     #page-home {
         background-position-x: 70vw ;
     }

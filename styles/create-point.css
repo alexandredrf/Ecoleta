@@ -112,3 +112,43 @@ transition: backgorund-color 400ms;
 form button:hover{
     background-color: rgb(42, 167, 52);
 }
+
+.items-grid {
+    display: grid; /*Display em colunas */
+    grid-template-columns: 1fr 1fr 1fr;  /* Fração ele distribui pelo total de fração */
+    gap: 16px;
+}
+
+.items-grid li {
+
+background-color: #f5f5f5;
+list-style: none;
+border: 2px solid #f5f5f5;
+border-radius: 8px;
+height: 180px;
+padding: 32px 24px 16px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+text-align: center;
+cursor: pointer; /*Chega perto e vira mãozinha para selecionar -  elemento "a" (Links já vez cursor pointer padrão) */
+
+}
+.items-grid li span{
+    margin-top: 12px;
+    flex: 1; 
+    display: flex;
+    align-items: center;
+    color: var(--tittle-color);
+}
+
+.items-grid li.selected {
+
+    background: #e1faec;
+    border: 2px solid #34cb79;
+}
+.items-grid li img,             /*Faz com que o evento de retorno seja apenas o id*/
+.items-grid li span {
+    pointer-events: none;
+}
