@@ -5,6 +5,8 @@
  //INICIAR O OBJETO DE BANCO DE DADOS
  const db = new sqlite3.Database("./src/database/database.db")
 
+ module.exports = db  // exporta o bando de dados para aplicação  --> uso no require com endereço do arquivo
+
  // UTILIZAR O OBJETO DE BANCO DE DADOS , PARA NOSSAS OPERAÇÕES
  /*
  db.serialize(() => {
@@ -72,7 +74,7 @@
 
         // 4: deletar um dado na tabela
 
-        db.run(`DELETE FROM places WHERE id = ?`, [], function(err){
+        db.run(`DELETE FROM places WHERE id = ?`, [4], function(err){
 
             if (err) {
                 return console.log(err)
@@ -82,7 +84,8 @@
 
         })
 
-*/
+
 
  })
  
+*/

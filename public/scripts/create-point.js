@@ -55,6 +55,7 @@ document
 //pegar todos os lis
 
 const itemsToCollect = document.querySelectorAll(".items-grid li")
+
 for (const item of itemsToCollect) {
 item.addEventListener("click", handleSelectedItem)    // Toda vez que acontece a mudança chama a função handleSelectedItem
 }
@@ -68,9 +69,10 @@ function handleSelectedItem(event) {
 const itemLi = event.target
 
 //Adicionar ou remover uma classe com javascript
-itemLi.classList.toggle("selected")   // toglle adiciona ou remove
+itemLi.classList.toggle("selected")   // toglle adiciona ou remove classe com javascript
 
     const itemId = event.target.dataset.id
+   // console.log('ITEM ID: ', itemId)
 
     //verificar se existem itens selecionados, se sim 
     //pegar os itens selecionados
@@ -95,7 +97,12 @@ itemLi.classList.toggle("selected")   // toglle adiciona ou remove
 
         selectedItems = filterdItems
       
+        
+
     } 
+
+   
+
     //se não estiver selecionado , adicionar à seleção
     else{
         selectedItems.push(itemId)
@@ -103,7 +110,7 @@ itemLi.classList.toggle("selected")   // toglle adiciona ou remove
     }
     
 
-
+    //console.log('selectedItems: ',selectedItems)
 
     //atualizar o campo escondido com os itens selecionados
    
