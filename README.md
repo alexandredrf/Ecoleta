@@ -1,14 +1,23 @@
-# Ecoleta
-Treinamento dev week
+# Ecoleta 
 
+Site de cadastro e consulta de locais de coleta de lixos recicláveis
 
-no console npm install express
+## Installation
 
-Com o auxíliod do nunjucks é possível utiizar os arquivos html de forma dinâmica -> utilizando variáveis , objetos dividindo o html
-ex: pasta partials --> São arquivos que são utilizados com frequência em um ou mais arquivos html da pasta views
+Pós node.js instalado, basta digitar no terminal: 
+```
+npm install
+```
 
+## Usage
 
-PARA RODAR NA MÁQUINA PRECISA FAZER O DOWNLOAD DE NODE.JS
-ABRIR O TERMINAL -> NPM INSTALL E NPM START
+Ainda no terminal dê o start e acesse no navegador em localhost/3000
+```
+npm start
+```
 
-FAZENDO ISSO ABRA NO NAVEGADOR HTTP://LOCALHOST:3000
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
