@@ -11,7 +11,7 @@ npm install
 
 ## Usage
 
-Ainda no terminal dê o start e acesse no navegador em localhost/3000
+Ainda no terminal dê o start e acesse no navegador em localhost:3000
 ```
 npm start
 ```
